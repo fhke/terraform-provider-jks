@@ -1,15 +1,15 @@
 package jks
 
 type (
-	// KeystoreBuilder provides a builder interface to generate JKS keystores
+	// KeystoreBuilder provides a builder interface to generate JKS keystores.
 	KeystoreBuilder struct {
-		// keyPairs maps keypair aliases to keyPair
+		// keyPairs maps keypair aliases to keyPair.
 		keyPairs map[string]keyPair
-		// password is the keystore password
+		// password is the keystore password.
 		password string
 	}
 
-	// keyPair represents a certificate to add to the keystore
+	// keyPair represents a certificate to add to the keystore.
 	keyPair struct {
 		// Private key in PEM format
 		key []byte

@@ -24,6 +24,9 @@ website/node_modules
 *.iml
 *.test
 *.iml
+*.jks
+*.p12
+*.pem
 
 website/vendor
 
