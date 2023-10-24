@@ -7,7 +7,7 @@ import (
 	"github.com/lwithers/minijks/jks"
 )
 
-// certChain generates a chain of certificates, starting with the server cert
+// certChain generates a chain of certificates, starting with the server cert.
 func (k keyPair) certChain() ([]*x509.Certificate, error) {
 	// prepend server cert to CA certs
 	pemCerts := append([][]byte{k.cert}, k.caCerts...)
@@ -26,7 +26,7 @@ func (k keyPair) certChain() ([]*x509.Certificate, error) {
 	return certs, nil
 }
 
-// privKey decodes the private key to a private key format
+// privKey decodes the private key to a private key format.
 func (k keyPair) privKey() (any, error) {
 	// parse key from PEM
 	pemKey, err := decodePEM(k.key)
@@ -47,7 +47,7 @@ func (k keyPair) privKey() (any, error) {
 	}
 }
 
-// toJKSKeypair converts keyPair to a *jks.Keypair
+// toJKSKeypair converts keyPair to a *jks.Keypair.
 func (k keyPair) toJKSKeypair(alias string) (*jks.Keypair, error) {
 	// get private key
 	privKey, err := k.privKey()

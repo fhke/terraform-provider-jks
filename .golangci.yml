@@ -3,6 +3,10 @@
 issues:
   max-per-linter: 0
   max-same-issues: 0
+  exclude-rules:
+  - path: internal\/provider
+    linters:
+      - forcetypeassert
 
 linters:
   disable-all: true

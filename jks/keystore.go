@@ -6,7 +6,7 @@ import (
 	"github.com/lwithers/minijks/jks"
 )
 
-// NewKeystoreBuilder creates a new KeyStoreBuilder
+// NewKeystoreBuilder creates a new KeyStoreBuilder.
 func NewKeystoreBuilder() *KeystoreBuilder {
 	return &KeystoreBuilder{
 		keyPairs: make(map[string]keyPair),
@@ -37,7 +37,7 @@ func (k *KeystoreBuilder) SetPassword(password string) {
 	k.password = password
 }
 
-// Build constructs the keystore from the builder contents
+// Build constructs the keystore from the builder contents.
 func (k *KeystoreBuilder) Build() ([]byte, error) {
 	// Validate builder contents
 	if err := k.validate(); err != nil {
@@ -84,7 +84,7 @@ func (k *KeystoreBuilder) genKeyPairs() ([]*jks.Keypair, error) {
 	return kps, nil
 }
 
-// validate validates the contents of the builder
+// validate validates the contents of the builder.
 func (k *KeystoreBuilder) validate() error {
 	if k.password == "" {
 		return ErrNoPassword

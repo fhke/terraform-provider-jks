@@ -6,7 +6,7 @@ import (
 	"errors"
 )
 
-// parse PEM data to a certificate
+// parse PEM data to a certificate.
 func parseCertPEM(data []byte) (*x509.Certificate, error) {
 	bl, err := decodePEM(data)
 	if err != nil {
@@ -15,7 +15,7 @@ func parseCertPEM(data []byte) (*x509.Certificate, error) {
 	return x509.ParseCertificate(bl.Bytes)
 }
 
-// decode PEM data to a pem block
+// decode PEM data to a pem block.
 func decodePEM(data []byte) (*pem.Block, error) {
 	bl, _ := pem.Decode(data)
 	if bl == nil {
