@@ -3,7 +3,7 @@ module github.com/fhke/terraform-provider-jks
 go 1.19
 
 require (
-	github.com/docker/docker v24.0.6+incompatible
+	github.com/docker/docker v24.0.7+incompatible
 	github.com/golangci/golangci-lint v1.55.0
 	github.com/google/uuid v1.3.1
 	github.com/hashicorp/terraform-plugin-docs v0.16.0
