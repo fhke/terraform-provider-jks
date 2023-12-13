@@ -7,7 +7,7 @@ require (
 	github.com/golangci/golangci-lint v1.55.2
 	github.com/google/uuid v1.3.1
 	github.com/hashicorp/terraform-plugin-docs v0.16.0
-	github.com/hashicorp/terraform-plugin-framework v1.4.1
+	github.com/hashicorp/terraform-plugin-framework v1.4.2
 	github.com/lwithers/minijks v1.1.0
 	github.com/opencontainers/image-spec v1.0.2
 	github.com/stretchr/testify v1.8.4
