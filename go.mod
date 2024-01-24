@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/docker/docker v24.0.6+incompatible
 	github.com/golangci/golangci-lint v1.55.2
-	github.com/google/uuid v1.3.1
+	github.com/google/uuid v1.6.0
 	github.com/hashicorp/terraform-plugin-docs v0.16.0
 	github.com/hashicorp/terraform-plugin-framework v1.4.1
 	github.com/lwithers/minijks v1.1.0
